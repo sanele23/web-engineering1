@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sanele Krakra's Home Page</title>
+    <meta charset="UTF-08">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Css link   -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!--  Internal Style - CSS  -->
+    <style>
+        .btn {
+            color: #F7FFF7;
+            background: #2F3061;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+    
+    </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>CS213: Web Engineering 1</h1>
+  <em><p>"Perfectly balanced, like all things should be." </p></em>
+    
+    <strong>Thanos</strong>
+</div>
+
+<div class="navbar">
+  <ul>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#footer">Contact</a>
+    
+    </ul>
+</div>
+
+<div class="row">
+  <div class="side">
+    <img src="me.jpg" alt="a picture of me" width="200">
+    <strong>
+        <h3 style="border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; margin-bottom: 15px;">Student Details</h3>
+        <h3>Sanele Krakra</h3>
+        <p>Major: Appllied Technology</p>
+        <p>Location: South Africa</p>
+        <a class="btn" href="../index.html" target="_blank">CS 213 Assignments</a>
+    </strong>
+
+  </div>
+  <div class="main">
+    <section id="education">
+          <div class="content-wrap item-details">
+            <h2>Education</h2>
+
+            <!-- Copy this whole <section> block to add more schools. -->
+              
+              <!-- Education 1 -->
+            <section>
+              <h3>Brigham Young University-Idaho</h3>
+              <p>Bachelor of Science Degree in Applied Technology: 2021 - present</p>
+              <p>Summary or accomplishments.</p>
+            </section>
+              
+              <!-- Education 2 -->
+            <section>
+              <h3>BYU-Pathway Worldwide</h3>
+              <p>PathwayConnect Certificate: 2017 - 2018</p>
+              <p>A year-long program teaching life skills, English, algebra, and personal finance.</p>
+            </section>
+              
+              <!-- Education 3 -->
+            <section>
+              <h3>Brigham Young University-Idaho - Rexburg</h3>
+              <p>Bachelor of Science Degree in Applied Technology, 2021 - present</p>
+              <p>Summary or accomplishments.</p>
+            </section>
+        <!-- End of School block. -->
+          </div>
+      </section>
+    
+    <section id="projects">
+          <div class="content-wrap divider">
+            <h2>Python Projects</h2>
+            <p>As an aspiring software developer, I have done a number of projects. To gain access to all my projects, please visit my GitHub account:  <a  href="https://github.com/sanele23">github.com</a>.</p>
+
+            <!-- Copy the whole <section> block to add more projects. -->
+            <section class="project-item">
+                
+            <img src="skeet-game.png" alt="skeet game play image." width="300">
+              <h3>Skeet Game Development Project</h3>
+              
+              <p>A game that simulates skeet shooting. The object of the game is to hit the intended targets, and not other "safe" ones. The game was built using the Python Arcade Library.</p>
+              <a class="btn" href="#" target="_blank">View project source code</a>
+            </section>
+              
+            <section class="project-item">
+            <img src="asteroids-game.png" alt="asteroid game play image." width="300">
+              <h3>Asteroids Game DevelopmentProject</h3>
+              <p>Classic asteroid game. The purpose of the game if to evade and destroy asteroid objects that threaten to destroy your ship. The game was built using the Python Arcade Library.</p>
+              <a class="btn" href="#" target="_blank">View project source code</a>
+            </section>
+              
+              
+            <section class="project-item">
+            <img src="data-analysis.png" alt="data analysis graph." width="300">
+              <h3>Data Analysis Project - NBA Basketball Data</h3>
+              <p>Use Python to process NBA data file (csv), calculate values, and produce graphs. The tools used for this project include: pandas, matplotlib, seaborn, numpy.</p>
+              <a class="btn" href="#" target="_blank">View project source code</a>
+            </section>
+            <!-- End of Project block. -->
+          </div>
+      </section>
+  </div>
+</div>
+
+<!--  The Footer will contain a contact form  -->
+<div id="footer">
+    
+    <div class="form-table">
+        <h2>Contact Form</h2>
+        <label>First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+        
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <hr>
+            
+        <h3>Gender</h3>
+            <div class="container">
+              <div class="radio">
+                <input id="radio-1" name="radio" type="radio" checked>
+                <label for="radio-1" class="radio-label">Male</label>
+              </div>
+
+              <div class="radio">
+                <input id="radio-2" name="radio" type="radio">
+                <label  for="radio-2" class="radio-label">Female</label>
+              </div>
+                
+            <div class="radio">
+                <input id="radio-2" name="radio" type="radio">
+                <label  for="radio-2" class="radio-label">Other</label>
+            </div>
+        <hr>
+            
+        <h3>Falculty</h3>
+            <label>Health
+              <input type="checkbox" />
+              <span></span>
+            </label>
+                
+            <label>Technology
+              <input type="checkbox" />
+              <span></span>
+            </label>
+                
+            <label>Commerce
+              <input type="checkbox" />
+              <span></span>
+            </label>
+            <hr>
+                
+        <h3 for="country">Country</h3>
+            
+        <select id="country" name="country">
+            <option value="south-africa">South Africa</option>
+            <option value="australia">Australia</option>
+            <option value="england">England</option>
+            <option value="japan">Japan</option>
+            <option value="usa">USA</option>
+            
+        </select>
+        <hr>
+                
+        <h3 for="subject">Subject</h3>
+            
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:120px"></textarea>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        
+        </div>
+    </div>
+</div>
+    
+
+</body>
+</html>
