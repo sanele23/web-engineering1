@@ -3,30 +3,48 @@
 <head>
     <meta charset="UTF-08">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+
     <!-- Import CSS file -->
     <link rel="stylesheet" href="style.css">
 
     <title>Site | Home Page</title>
+
+    <style>
+        .title span {
+            color: #ff0101;
+        }
+        span {
+            color: #ff0101;
+        }
+
+        .banner .content p {
+            font-size: 1.5em;
+            font-style: italic;
+        }
+        
+    </style>
 </head>
 
 <body>
     <!-- Header/Navigation -->
     <header>
-        <a href="#" class="logo"><span><img src="logo.jpeg" alt="logo" width="150"></span></a>
+        <a href="assign04.html" class="logo"><span><img src="logo.jpeg" alt="logo" width="150"></span></a>
         <ul class="navigation">
             <li><a href="#banner">Home</a></li>
             <li><a href="#menu">Menu</a></li>
-            <li><a href="assign04_2.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expert">Expert</a></li>
+            <li><a href="assign04_2.html">Contact</a></li>
         </ul>
     </header>
 
     <!-- Cover Page section -->
     <section class="banner" id="banner">
         <div class="content">
-            <h2>Always Choose Good</h2>
-            <p>This is really something you should really think about.</p>
+            <h2>In The Kitchen With Sethu<span>.</span></h2>
+            <p>Taste the best of South Africa's dishes in the streets of Soweto<span>.</span></p>
 
             <a href="#menu" class="btn">Our Menu</a>
         </div>
@@ -37,63 +55,116 @@
     <section class="menu" id="menu">
         <div class="title">
             <h2>Our <span>M</span>enu</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p>Our menu does its best to accommodate everyone. We have different types of categories that a customers can order from.</p>
         </div>
         <div class="content">
             <div class="box">
                 <div class="imgBox">
-                    <img src="menu.jpg">
+                    <img src="menu1.png">
                 </div>
                 <div class="text">
-                    <h3>Special Salads</h3>
+                    <h3>Breakfast</h3>
                 </div>
             </div>
             <div class="box">
                 <div class="imgBox">
-                    <img src="menu.jpg">
+                    <img src="menu2.png">
                 </div>
                 <div class="text">
-                    <h3>Special Salads</h3>
+                    <h3>Pizza</h3>
                 </div>
             </div>
             <div class="box">
                 <div class="imgBox">
-                    <img src="menu.jpg">
+                    <img src="menu3.png">
                 </div>
                 <div class="text">
-                    <h3>Special Salads</h3>
+                    <h3>Traditional Food</h3>
                 </div>
             </div>
             <div class="box">
                 <div class="imgBox">
-                    <img src="menu.jpg">
+                    <img src="menu4.png">
                 </div>
                 <div class="text">
-                    <h3>Special Salads</h3>
+                    <h3>Salad</h3>
                 </div>
             </div>
             <div class="box">
                 <div class="imgBox">
-                    <img src="menu.jpg">
+                    <img src="menu5.png">
                 </div>
                 <div class="text">
-                    <h3>Special Salads</h3>
+                    <h3>Braai</h3>
                 </div>
             </div>
             <div class="box">
                 <div class="imgBox">
-                    <img src="menu.jpg">
+                    <img src="menu6.png">
                 </div>
                 <div class="text">
-                    <h3>Special Salads</h3>
+                    <h3>Dessert</h3>
                 </div>
             </div>
         </div>
         <div class="title">
             <!-- <h2>Our <span>M</span>enu</h2> -->
-            <a href="#" class="btn">View All</a>
+            <a href="#expert" class="btn">Our Cheff</a>
         </div>
     </section>
+
+    <!-- About Page section -->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <br>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    <br><br>
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <br>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="rib-and-wing.PNG">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Expert Section -->
+    <section class="expert" id="expert">
+        <div class="title">
+            <h2>Our Kitchen <span>E</span>xpert</h2>
+            <br>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="expert.PNG">
+                </div>
+                <div class="text">
+                    <h3>Siphosethu Krakra (Founder)</h3>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+        </div>
+    </footer>
+
 
     <!-- JavaScript scripting -->
     <script type="text/javascript">

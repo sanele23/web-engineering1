@@ -18,6 +18,7 @@ body {
 }
   
 p {
+    font-size: medium;
     font-weight: 300;
     color: #111;
 }
@@ -56,7 +57,7 @@ p {
 .btn {
     font-size: 1em;
     color: #fff;
-    background: #ff0157;
+    background: #ff0101;
     display: inline-block;
     padding: 10px 30px;
     margin-top: 20px;
@@ -173,6 +174,7 @@ section {
 /* Menu Section */
 .title {
     width: 100%;
+    font-size: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,3 +256,83 @@ section {
     font-size: 400;
     color: #111;
 }
+
+/* Contact Us */
+.contact {
+    color: #fff;
+    background: 
+        /* transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.8), 
+          rgba(0, 0, 0, 0.8)
+        ),
+        /* bottom, image */
+        url("contact-cover.jpg");
+    background-size: cover;
+}
+
+.contactForm {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactForm h3 {
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactForm .inputBox input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0101;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    background: #061D25;
+    padding: 10px 0;
+  }
+  .footer a {
+    color: #70726F;
+    font-size: 20px;
+    padding: 10px;
+    border-right: 1px solid #70726F;
+    transition: all .5s ease;
+  }
+  .footer a:first-child {
+    border-left: 1px solid #70726F;
+  }
+  .footer a:hover {
+    color: white;
+  }

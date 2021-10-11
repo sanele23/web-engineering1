@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-08">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+
     <!-- Import CSS file -->
     <link rel="stylesheet" href="style.css">
 
@@ -11,6 +13,14 @@
 
     <!-- Internal styling -->
     <style>
+        
+        .title span {
+            color: #ff0157;
+        }
+
+        .title p {
+            color: #fff;
+        }
         header {
             position: fixed;
             top: 0;
@@ -22,14 +32,26 @@
             justify-content: space-between;
             align-items: center;
             transition: 0.5s;
-            background-color: #08080a;
+            background-color: black;
         }
 
-        section.about {
+        section {
             padding: 150px;
         }
-        .title span {
-            color: #ff0157;
+
+        .contact {
+            justify-content: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+        .contactForm {
+            justify-content: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -37,59 +59,49 @@
 <body>
     <!-- Header/Navigation -->
     <header>
-        <a href="assign04.html" class="logo"><span><img src="logo.jpeg" alt="logo" width="150"></span></a>
+        <a href="assign04.html" class="logo"><img src="logo.jpeg" alt="logo" width="150"></a>
         <ul class="navigation">
             <li><a href="assign04.html">Home</a></li>
-            <li><a href="#assign04.html">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#expert">Expert</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="assign04.html">Menu</a></li>
+            <li><a href="assign04.html">About</a></li>
+            <li><a href="assign04.html">Expert</a></li>
+            <li><a href="assign04_2.html">Contact</a></li>
         </ul>
     </header>
 
-    <!-- About Page section -->
-    <section class="about" id="about">
-        <div class="row">
-            <div class="col50">
-                <h2 class="titleText"><span>A</span>bout Us</h2>
-                <br>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    <br><br>
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
-                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-            <br>
-            <div class="col50">
-                <div class="imgBx">
-                    <img src="rib-and-wing.PNG">
-                </div>
-            </div>
-        </div>
 
-    </section>
-
-    <!-- Expert Section -->
-    <section class="expert" id="expert">
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
         <div class="title">
-            <h2>Our Kitchen <span>E</span>xpert</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <h1><span>C</span>ontact</h1>
+            <br>
+            <p>To contact us, please fill in the form and we'll keep in touch!</p>
         </div>
-        <div class="content">
-            <div class="box">
-                <div class="imgBox">
-                    <img src="expert.PNG">
-                </div>
-                <div class="text">
-                    <h3>Siphosethu Krakra</h3>
-                </div>
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
             </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Name"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send">
+            </div>
+        </div>
     </section>
 
+    <footer class="footer">
+        <div class="container text-center">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+        </div>
+    </footer>
+    
     <!-- JavaScript scripting -->
     <script type="text/javascript">
         window.addEventListener('scroll', function(){
