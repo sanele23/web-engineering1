@@ -1,0 +1,392 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.nav-bar {
+	margin-top: 5px;
+	position: sticky;
+
+}
+.logo a,
+.nav-bar a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.nav-bar a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.nav-bar a:hover {
+	color: #718daa;
+}
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	color: #111;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.content {
+    /* max-width: 900px; */
+    width: 100%;
+    margin: 0 auto;
+}
+section {
+    padding: 100px;
+}
+
+/* ----- Who we are section ----- */
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.titleText {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span {
+    color: #299faf;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBox {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+}
+.row .col50 .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ----- Cover Content */
+
+.cover-content {
+	width: 100%;
+	height: 100vh;
+	background: 
+        /* transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.8), 
+          rgba(0, 0, 0, 0.8)
+        ),
+        /* bottom, image */
+        url("cover.jpg");
+	background-position: center;
+    background-size: cover;
+}
+
+.container {
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+
+.col {
+	flex-basis: 50%;
+}
+
+.col h1 {
+	color: #fff;
+	font-size: 50px;
+}
+
+.col p {
+	color: #fff;
+	font-size: 14px;
+	line-height: 15px;
+}
+
+button {
+	width: 180px;
+	color: #000;
+	font-size: 12px;
+	padding: 12px 0;
+	background: #fff;
+	border: 0;
+	border-radius: 20px;
+	outline: none;
+	margin-top: 30px;
+}
+
+.card {
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+	/* opacity: 1; */
+}
+
+.card1 {
+	background-image: 
+        /* transparent black, faked with gradient */ 
+        linear-gradient(
+			rgba(80, 75, 75, 0.2), 
+			rgba(66, 63, 63, 0.5)
+        ),
+        /* bottom, image */
+        url("pic1.png");
+}
+.card2 {
+	background-image: 
+        /* transparent black, faked with gradient */ 
+        linear-gradient(
+			rgba(80, 75, 75, 0.2), 
+			rgba(66, 63, 63, 0.5)
+        ),
+        /* bottom, image */
+        url("pic2.jpg");
+}
+.card3 {
+	background-image: 
+        /* transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(80, 75, 75, 0.2), 
+          rgba(66, 63, 63, 0.5)
+        ),
+        /* bottom, image */
+        url("pic3.jpg");
+}
+.card4 {
+	background-image: 
+        /* transparent black, faked with gradient */ 
+        linear-gradient(
+			rgba(80, 75, 75, 0.2), 
+			rgba(66, 63, 63, 0.5)
+        ),
+        /* bottom, image */
+        url("pic4.jpg");
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	visibility: visible;
+	opacity: 1;
+}
+
+.card > a button {
+	width: 100%;
+	color: #000;
+	justify-content: center;
+	font-size: 12px;
+	/* padding: 12px 0; */
+	background: #fff;
+	/* border: 0; */
+	border-radius: 8px;
+	outline: none;
+	/* margin: auto; */
+	visibility: hidden;
+	
+}
+
+.card:hover {
+	background: linear-gradient(
+		  rgba(0, 0, 0, 0.5), 
+		  rgba(0, 0, 0, 0.5)
+	  );
+}
+
+.card:hover button {
+	visibility: visible;
+  	opacity: 1;
+}
+
+/* ---------- Academics --------- */
+.academic-content h1 {
+	color: #111;
+	font-size: 2em;
+	font-weight: 300;
+}
+.academic-content span {
+    color: #299faf;
+    font-weight: 700;
+}
+.academic-content p {
+	margin: 0;
+	padding-top: 15px;
+	font-weight: 200;
+	font-size: 16px;
+}
+
+.blue_rounded {
+	padding-top: 1rem;
+	border: 2px solid #26607F;
+	border-radius: 0.5rem;
+	background-color: #0076b6;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 1rem;
+	padding: 1rem;
+}
+
+.white_rounded {
+	border: 2px solid #26607F;
+	border-radius: 0.5rem;
+	background-color: #fff;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 1rem;
+	width: 100%;
+}
+
+.placeholder_image img {
+	background-color: #26607F;
+	/* width: 100%; */
+	height: 10rem;
+	justify-content: center;
+}
+
+#form-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
+}
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 500px) {
+	.header,
+	.nav-bar {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    }
+    	    .header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+
+	/* .card {
+		visibility: hidden;
+	} */
+}
+
+@media (max-width: 500px) {
+	.about {
+		display: inline-block;
+		padding: 5px;
+		padding-bottom: 0;
+	}
+	.about p {
+		width: 100%;
+	}
+	.row {
+		display: inline-block;
+	}
+	.col {
+		display: inline-block;
+		flex-direction: column-reverse;
+	}
+
+	.cover-content {
+		display: inline-block;
+		justify-content: center;
+		background-size: cover;
+	}
+	.card {
+		visibility: hidden;
+	}
+}
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+@media screen and (min-width: 1200px){
+    #form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    #form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}

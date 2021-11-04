@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="a javascript calculator">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <header>
+        <h1>Week 07: Calculator</h1>
+        <h2>Sanele Krakra</h2>
+    </header> -->
+    <form id="form">
+        <h3>Calculator</h3>
+        <hr>
+        <input type="number" min="0" max="25" placeholder="APR (Annual Percentage Rate)" id="apr" autofocus required>
+        <br>
+        <input type="number" min="1" max="40" placeholder="Loan Term (years)" id="term" required>
+        <br>
+        <input type="number" placeholder="$: loan amount" id="amount" required>
+        <br>
+        <!-- <input type="number" placeholder="Monthly payment" id="payment" required>
+        <br> -->
+        <button type="submit" onclick="Calculator();">Results</button>
+
+        <button type="reset">Reset</button>
+        <hr>
+        <p><span id="payment"></span></p>
+    </form>
+
+    <script>
+        function Calculator() {
+
+            let apr = parseFloat(document.getElementById("apr").value);
+            let term = parseFloat(document.getElementById("term").value);
+            let amount = parseFloat(document.getElementById("amount").value);
+            
+            let interest = (amount * (apr * 0.01)) / term;
+            let payment = ((amount / term) + apr).toFixed(2);
+            payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ", ");
+
+            document.getElementById('payment').innerHTML = "Monthly Payment = $: " + payment;
+
+            
+        }
+    </script>
+</body>
+</html>
