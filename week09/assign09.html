@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AJAX Week 9 Web Engineering 1">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Sanele Krakra AJAX</title>    
+</head>
+
+<body>
+<main>
+    <section class="cities">
+        <h3> Search for the 10 Largest Cities</h3>
+        <form>
+            <label >Please Select Your Country:</label> <br><br>
+            <select name="countries" onchange="AJAXCommand(value)">
+                <option value="default" selected disabled>Select Country</option>
+                <option value="usa.txt" >USA</option>
+                <option value="canada.txt">Canada</option>
+                <option value="mexico.txt">Mexico</option>
+                <option value="russia.txt">Russia</option>
+            </select>
+        </form>
+    </section>
+    <hr>
+    <section class="student-info">
+        <div id="cities"></div>
+        <div class="middle-bar"></div>
+            <div class="student">
+                <h3>Students Info:</h3>
+                <input type="text" id="student_json" value="json.txt" name="json_student">
+                <button type="button" onclick="AJAXCommand(student_json.value)" name="button">Display Info</button>
+            
+                <div id="info"></div>
+        </div>
+    </section>
+    
+ </main>
+      
+<script src="app.js"></script>
+</body>
+</html>

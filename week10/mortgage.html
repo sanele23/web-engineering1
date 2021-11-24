@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="a javascript calculator">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <form id="form" onsubmit="return checkErrors()" action="mortgage.php" method="GET">
+        <h3>Calculator</h3>
+        <hr>
+
+        <label>APR</label>
+        <br>
+        <input type="number" id="apr" name="apr" autofocus required>
+        <br>
+        <br>
+
+        <label>Loan term</label>
+        <br>
+        <input type="number" id="term" name="term" required>
+        <br>
+        <br>
+        <label>Amount</label>
+        <br>
+        <input type="number" id="amount" name="amount" required>
+        <br>
+
+        <button type="submit" name="Calculate" value="Calculate Payment"> Result </button>
+        <button type="reset" name="Clear" value="Reset Form"> Reset </button>
+
+        <hr>
+        
+    </form>
+
+</body>
+</html>
