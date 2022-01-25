@@ -1,0 +1,80 @@
+#form {
+    margin: 10px auto;
+	border: 1px solid #999;
+	padding: 10px;
+	max-width: 900px;
+	background-color: #abe;
+	box-shadow: 0 0 30px;
+	padding-left: 45px;
+}
+
+header {
+    padding: 10px;
+    background-color: #ff7f50;
+}
+
+*{
+	padding-left: 15px;
+}
+
+
+input {
+	border: 1px solid #848484;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	outline:0;
+	height:25px;
+	width: 275px;
+	margin-top: 15px;
+	padding-left:10px;
+	padding-right:10px;
+	text-align: left;
+	
+}
+
+textarea {
+    border: 1px solid #848484;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	outline:0;
+	height: 55px;
+	width: 275px;
+	margin-top: 15px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+label {
+	display: flex;
+	margin-top: 5px;
+	padding-top: 10px;
+}
+
+/* .items label {
+    display: inline-block;
+    text-align: left;
+} */
+
+button {
+	display: inline-block;
+    background-color: #3843d8;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: auto;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.credit_field #card {
+	display: inline-flex;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Make an AJAX request to a CGI web service that returns the mileage between two cities as a JSON text string" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Working with Ajax and APIs</title>
+</head>
+
+<body>
+
+  <header class="header-grid-container">
+    <h1 class="header-grid-item header-item1">Working with Ajax and APIs</h1>
+    <h2>Week 12 - Travel Distance</h2>
+  </header>
+
+  <section>
+    <h2 class="section-title text-center">Display Travel Data</h2>
+
+    <form onkeypress="return event.keyCode != 13;">
+      <label for="startCity">Starting City</label>
+      <input type="text" id="startCity" name="startCity" value="Boise" />
+      <div class="validation-field" id="startCityNotification"></div>
+
+      <label for="startState">Starting State</label>
+      <input type="text" id="startState" name="startState" value="ID" />
+      <div class="validation-field" id="startStateNotification"></div>
+      
+      <label for="endCity">End City</label>
+      <input type="text" id="endCity" name="endCity" value="Denver" />
+      <div class="validation-field" id="endCityNotification"></div>
+
+      <label for="endState">End State</label>
+      <input type="text" id="endState" name="endState" value="CO" />
+      <div class="validation-field" id="endStateNotification"></div>
+
+      <button type="button" onclick="displayDistance();">Display</button>
+      <div id="distanceCards"></div>
+      <div id="distanceNotification" class="validation-field"></div>
+    </form>
+  </section>
+
+  <footer><p>&copy; Sanele Krakra </p></footer>
+
+  <script src="calculate.js"></script>
+</body>
+
+</html>

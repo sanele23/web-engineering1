@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="a javascript calculator">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <form id="form" action="assign11.php" method="get">
+        <h3>Order Confirmation Form</h3>
+        <hr>
+        <!-- First Name -->
+        <label for="name">First Name</label>
+		<input type="text" name="first_name" id="first_name" required>
+
+        <!-- Last Name -->
+        <label for="name">Last Name</label>
+		<input type="text" name="last_name" id="last_name" required>
+
+        <!-- Address -->
+        <label for="address">Address</label>
+		<textarea name="address" id="address" rows="5" cols="25" required></textarea>
+
+        <!-- Phone number -->
+        <label for="phone">Phone</label>
+		<input type="tel" name="phone" id="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+        <small>Format: 123-456-7890</small>
+        <hr>
+        <!-- Checkbox for item purchases -->
+        <table class = "item" style="background-color: #33cc33;">
+            <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th></th>                      
+            </tr>
+            <tr>
+                <td>Hamburger</td>
+                <td>$3.50</td>
+                <td><input class="item" type="checkbox" name="item_0" value="3.50" data-price='450.00'></td>
+            </tr>
+            <tr>
+                <td>Cheeseburger</td>
+                <td>$4.50</td>
+                <td><input class="item" type="checkbox" name="item_1" value="4.50" data-price='450.00'></td>
+            </tr>
+            <tr>
+                <td>Bacon Cheeseburger</td>
+                <td>$6.00</td>
+                <td><input class="item" type="checkbox" name="item_2" value="6.00" data-price='450.00'></td>
+            </tr>
+            <tr>
+                <td>Fries</td>
+                <td>$2.00</td>
+                <td><input class="item" type="checkbox" name="item_3" value="2.00" data-price='450.00'></td>
+            
+            <tr style="background-color: white;">
+                <td>Total</td>
+                <td><span name="total" id="total">$0.00</span></td>
+                <td></td>
+            </tr>
+            </table>
+        <hr>
+        <!--    Credit card    -->
+        <div class="card_field">
+            <p>Credit Card</p>
+            <label for="card">Visa</label>
+            <input type="radio" id="card" name="card" value="visa">
+
+            <label for="card">Mastercard</label>
+            <input type="radio" id="card" name="card" value="mastercard">
+
+            <label for="card">American Express</label>
+            <input type="radio" id="card" name="card" value="american">
+        </div>
+        
+        
+        <!-- Credit Card Validation -->
+        <br>
+        <label for="phone">Credit Card</label>
+		<input type="tel" name="phone" id="phone"
+                     pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"
+                    required>
+        <small>Format: xxxx xxxx xxxx xxxx</small>
+        
+        <!-- Credit Card Validation -->
+        <br>
+        <label for="phone">Credit Card - Expiry Date</label>
+		<input type="tel" name="exp_date" id="exp_date"
+                    maxlength="7" pattern="[0-9]{2}/[0-9]{4}"
+                    required>
+        <small>Format: mm/year</small>
+        <br>
+        <button type="submit" onclick="formValidation();">Submit</button>
+
+        <button type="reset">Reset</button>
+        <hr>
+        <p><span id="output"></span></p>
+    </form>
+
+    <script>
+        window.onload = () =>
+        document.querySelectorAll(".item").forEach(input=>input.addEventListener("change",formValidation));
+
+        function formValidation() {
+        // when checkbox is clicked
+        let sum = 0;
+        document.querySelectorAll(".item").forEach(input=>sum += (input.checked? Number.parseFloat(input.getAttribute("data-price")):0));
+        document.getElementById("total").value = sum;
+
+        // Display on output id
+        let first_name = document.getElementById("first_name").value;
+        let last_name = document.getElementById("last_name").value;
+        let address = document.getElementById("address").value;
+        let phone = document.getElementById("phone").value;
+
+        
+        let card = document.getElementById("card").value;
+        let credit_card = document.getElementById("credit_card").value;
+        let exp_date = document.getElementById("exp_date").value;
+
+        
+        
+
+        document.getElementById("output").innerText = "Customer information" + first_name + last_name +
+                                                        address + phone + total + card + credit_card + exp_date;
+    }
+    </script>
+    
+</body>
+</html>
